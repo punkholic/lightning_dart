@@ -1,0 +1,242 @@
+<!doctype html>
+<!--
+  ~ Copyright (c) 2016 Accorto, Inc. All Rights Reserved
+  ~ License: GPLv3  http://www.gnu.org/licenses/gpl-3.0.txt
+  ~ License options+support:  https://lightningdart.com
+  -->
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="copyright" content="(c) 2016 Accorto Inc. All rights reserved. Accorto, Lightning Dart are registered trademarks of Accorto, Inc."/>
+
+  <title>Lightning Dart</title>
+  <meta name="description" content="Lightning Dart is a library for developing web applications based on the css framework SLDS">
+  <meta name="keywords" content="dart, dart css, slds, salesforce lightning design system, bootstrap">
+
+  <meta property="og:title" content="Lightning Experience with Dart" />
+  <meta property="og:description" content="Lightning Dart is a library for developing web applications based on the css framework SLDS" />
+  <meta property="og:image" content="https://lightningdart.com/packages/lightning/assets/images/LightningDartLogo.png" />
+  <meta property="og:url" content="https://lightningdart.com" />
+
+  <link rel="canonical" href="https://lightningdart.com"/>
+  <link rel="help" href="https://lightning.accorto.com" />
+  <link rel="shortcut icon" href="packages/lightning/assets/images/favicon.ico" type="image/x-icon" />
+
+  <link rel="stylesheet" type="text/css" href="packages/lightning/assets/styles/lightningdart.css" />
+  <link rel="stylesheet" type="text/css" href="packages/lightning/assets/styles/charted_theme.css">
+
+  <script type="text/javascript">var rumMOKey='3b346dd0d07f3d746efecd9c97fefc16';(function(){if(window.performance && window.performance.timing && window.performance.navigation) {var site24x7_rum_beacon=document.createElement('script');site24x7_rum_beacon.async=true;site24x7_rum_beacon.setAttribute('src','//static.site24x7rum.com/beacon/site24x7rum-min.js?appKey='+rumMOKey);document.getElementsByTagName('head')[0].appendChild(site24x7_rum_beacon);}})(window)</script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-32129178-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+
+<body>
+<div class="slds-container slds-container--fluid" data-timestamp="${timestamp}">
+  <div class="slds-grid">
+    <nav class="slds-col slds-shrink-none slds-theme--alt-inverse apps-menu">
+      <a href="#" class="apps-menu-show">
+        <svg class="slds-icon slds-icon--small">
+          <use xlink:href="packages/lightning/assets/icons/utility-sprite/svg/symbols.svg#rows"/>
+        </svg>
+      </a>
+      <a href="#" class="apps-menu-entry">
+        <svg class="slds-icon slds-icon--small">
+          <use xlink:href="packages/lightning/assets/icons/utility-sprite/svg/symbols.svg#home"/>
+        </svg>
+        <span>Home</span>
+      </a>
+      <a href="#" class="apps-menu-entry">
+        <svg class="slds-icon slds-icon--small">
+          <use xlink:href="packages/lightning/assets/icons/utility-sprite/svg/symbols.svg#desktop"/>
+        </svg>
+        <span>Desktop</span>
+      </a>
+      <a href="#" class="apps-menu-entry">
+        <svg class="slds-icon slds-icon--small">
+          <use xlink:href="packages/lightning/assets/icons/utility-sprite/svg/symbols.svg#tablet_portrait"/>
+        </svg>
+        <span>Tablet</span>
+      </a>
+      <a href="#" class="apps-menu-entry">
+        <svg class="slds-icon slds-icon--small">
+          <use xlink:href="packages/lightning/assets/icons/utility-sprite/svg/symbols.svg#phone_portrait"/>
+        </svg>
+        <span>Phone</span>
+      </a>
+      <a href="#" class="apps-menu-entry">
+        <svg class="slds-icon slds-icon--small">
+          <use xlink:href="packages/lightning/assets/icons/action-sprite/svg/symbols.svg#record"/>
+        </svg>
+        <span>Example Form</span>
+      </a>
+      <a href="#" class="apps-menu-entry">
+        <svg class="slds-icon slds-icon--small">
+          <use xlink:href="packages/lightning/assets/icons/action-sprite/svg/symbols.svg#flow"/>
+        </svg>
+        <span>Example Workspace</span>
+      </a>
+      <a href="http://lightning.accorto.com" class="apps-menu-entry" target="_blank">
+        <svg class="slds-icon slds-icon--small">
+          <use xlink:href="packages/lightning/assets/icons/utility-sprite/svg/symbols.svg#help"/>
+        </svg>
+        <span>Doc + Support</span>
+      </a>
+    </nav>
+
+
+    <div class="slds-col">
+      <header class="slds-m-around--small">
+        <img src="packages/lightning/assets/images/LightningDartLogo.svg" height="44" width="44" alt="Lightning Dart"/>
+      </header>
+      <section id="ld">
+        <header class="slds-page-header">
+          <h1 class="slds-text-heading--large" id="page-title">Lightning Dart</h1>
+          <p>Lightning User Interface in Dart</p>
+        </header>
+        <div id="ld-main" class="slds-grid  slds-wrap slds-m-around--large">
+          <article id="ld-text" class="slds-col slds-size--1-of-1 slds-medium-size--2-of-3 slds-p-bottom--medium slds-p-right--medium">
+            <div class="slds-text-longform">
+              <p>Lightning Dart is a library for developing web applications based on the CSS framework
+                <a href="http://www.lightningdesignsystem.com" target="_blank">Salesforce Lightning Design System</a>.
+                SLDS provides scss/css, icons and fonts, but no functionality.
+              </p>
+              <p>
+                Lightning Dart provides the most complete component functionality for slds. Written in <a href="https://www.dartlang.org" target="_blank" title="Dart Language">Dart</a>,
+                it compiles into Javascript ("Dart - the better Javascript"), so the delivery is a "one page apps".
+                You can add business functionality by writing the code in Dart - or in Javascript directly - or any language which can call Javascript.
+              </p>
+              <p>
+                The Framework is not dependent on salesforce.com functionality or context and can be used independently.
+              </p>
+              <p>
+                The Salesforce Lightning CSS framework is similar to Bootstrap but uses more recent CSS technology and concentrates on building Web Applications, not Web Sites.
+              </p>
+              <p>
+                Lightning Dart is mainly used to generate the user interface manually or from meta data.
+                In addition to that you can create a traditional html layout and then add the component functionality via Dart or Dart.
+              </p>
+              <p>This site uses the default theme. You can easily change the  design tokens and regenerate the css from the scss code, or customize the css as usual.
+                We added some scss files for enhanced component functionality.
+              </p>
+            </div>
+            <h2 class="slds-text-heading--medium slds-m-top--medium">Demos</h2>
+            <div class="slds-text-longform">
+              <p>
+                The demos show different configurationa and options for the components with the code required to create the example.</p>
+              <p>
+                <b>Component</b> Demo: click on one of the different size icons -
+                <a href="#" class="apps-menu-entry">
+                  <svg class="slds-icon slds-icon--x-small slds-icon-text-default">
+                    <use xlink:href="packages/lightning/assets/icons/utility-sprite/svg/symbols.svg#desktop"/>
+                  </svg>
+                  <span>Desktop</span>
+                </a>
+                 - Tablet - Phone on the left menu bar.</p>
+              <p>
+                <b>Form</b> Demo: click the
+                <a href="exampleForm.html" class="apps-menu-entry" target="_blank">
+                  <svg class="slds-icon slds-icon--x-small slds-icon-text-default">
+                    <use xlink:href="packages/lightning/assets/icons/action-sprite/svg/symbols.svg#record"/>
+                  </svg>
+                  <span>Example Form</span>
+                </a>
+                icon on the left menu bar - submit the form to sign up for major updates via email.</p>
+              <p>
+                <b>Workspace</b> Demo: click on the
+                <a href="exampleWorkspace.html" class="apps-menu-entry" target="_blank">
+                  <svg class="slds-icon slds-icon--x-small slds-icon-text-default">
+                    <use xlink:href="packages/lightning/assets/icons/action-sprite/svg/symbols.svg#flow"/>
+                  </svg>
+                  <span>Example Workspace</span>
+                </a>
+                icon on the left menu bar and check out an early version of the meta data driven workbench.
+                All server interactions are simulated with a 5 second delay</p>
+              <p>
+                The current version requires modern browsers to see the SVG based icons.
+              </p>
+            </div>
+            <h2 class="slds-text-heading--medium slds-m-top--medium">Documentation, Support, Help</h2>
+            <div class="slds-text-longform">
+              <p>
+                You find the <b>Documentation</b> in the Knowledge base at <a href="http://lightning.accorto.com/support/solutions/folders/1000217969" target="_blank">http://lightning.accorto.com</a>
+                &nbsp; and our <b>Blog</b> about our <a href="http://lightning.accorto.com/support/discussions/forums/1000228577" target="_blank">Lightning Experience</a> Journey.
+              </p>
+              <p>
+                For <b>Support</b>, Help and any Questions, send an email to lightning@accorto.com or go to
+                <a href="http://lightning.accorto.com" target="_blank">http://lightning.accorto.com</a>.
+              </p>
+              <p>
+                For consulting or custom development, just send an email to lightning@accorto.com.
+              </p>
+            </div>
+            <h2 class="slds-text-heading--medium slds-m-top--medium">Presentation</h2>
+            <div class="slds-media">
+              <div class="slds-media__figure">
+                <a href="http://www.slideshare.net/jorgjanke/dart-the-better-javascript-2015-53506990" target="_blank">
+                  <img src="svcc_2015_120x90.png" alt="Dart the better Javascript at Silicon Valley Code Camp"/></a>
+              </div>
+              <div class="slds-media__body">
+                <b>Dart - the better Javascript</b> Presentation at Silicon Valley Code Camp
+                <ul class="slds-list--dotted">
+                  <li class="slds-list__item">Dart Language Overview</li>
+                  <li class="slds-list__item">Development environment, Tooling</li>
+                  <li class="slds-list__item">Lightning Design System</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          <article id="ld-links" class="slds-col slds-size-1-of-1 slds-medium-size--1-of-3">
+            <div class="slds-media slds-tile">
+              <div class="slds-media__figure">
+                <span class="slds-avatar slds-avatar--medium">
+                  <img src="packages/lightning/assets/images/DartLogo.png" alt="Lightning Dart on Pub" width="42" height="42"/>
+                </span>
+              </div>
+              <div class="slds-media__body">
+                <p>Dart Pub Project Page</p>
+                <div class="slds-tile__detail slds-text-body--small">
+                  <a href="https://pub.dartlang.org/packages/lightning" target="_blank">packages/lightning</a>
+                </div>
+             </div>
+            </div>
+            <div class="slds-media slds-tile">
+              <div class="slds-media__figure">
+                <span class="slds-avatar slds-avatar--medium">
+                  <img src="packages/lightning/assets/images/GitHubLogo.jpg" alt="Lightning Dart on GitHub"/>
+                </span>
+              </div>
+              <div class="slds-media__body">
+                <p>GitHub Project Page</p>
+                <div class="slds-tile__detail slds-text-body--small">
+                  <a href="https://github.com/accorto/lightning-dart" target="_blank">accorto/lightning-dart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="slds-button-group slds-m-vertical--medium" role="group">
+              <a href="https://github.com/accorto/lightning-dart/zipball/master" class="slds-button slds-button--neutral" target="_blank">Download<br/><strong>ZIP File</strong></a>
+              <a href="https://github.com/accorto/lightning-dart/tarball/master" class="slds-button slds-button--neutral" target="_blank">Download<br/><strong>TAR Ball</strong></a>
+              <a href="https://github.com/accorto/lightning-dart" class="slds-button slds-button--neutral" target="_blank">View On<br/><strong>GitHub</strong></a>
+            </div>
+          </article><!-- ld-links -->
+        </div> <!-- ld-main -->
+      </section> <!-- ld -->
+    </div> <!-- right side -->
+  </div> <!-- grid -->
+</div> <!-- container -->
+<script src="packages/lightning/assets/scripts/ldart.js"></script>
+<script type="text/javascript">
+  LINIT={serverUri: "https://psa.bizfabrik.net/"};
+</script>
+<script type="application/dart" src="indexPage.dart"></script>
+<script src="packages/browser/dart.js"></script>
+</body>
+</html>
