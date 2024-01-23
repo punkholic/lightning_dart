@@ -24,13 +24,19 @@ class SvgUtil {
     return _createImg;
   }
   static bool _createImg;
+  static bool supportsSvgBasicStructure() {
+  var result = js.context.callMethod('eval', [
+    'document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1")'
+  ]);
+  return result as bool;
+}
 
   /// Create svg direct vs. use
   static bool createDirect(bool implementationOnly) {
     if (implementationOnly)
-      return !document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Structure", "1.1");
+      return !supportsSvgBasicStructure();
     if (_createDirect == null) {
-      _createDirect = !document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Structure", "1.1");
+      _createDirect = !supportsSvgBasicStructure();
       if (!_createDirect) {
         _createDirect = ClientEnv.isIE11  || ClientEnv.isChrome;
       }
